@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/2d/actors/actor_2d.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/2d/actors/sidescroller/actor_2d_sidescroller.gd" type="Script" id=2]
+
+[node name="Actor2DSideScroller" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+gravity = 1000.0
+jump_force = 600.0

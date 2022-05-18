@@ -1,0 +1,2 @@
+extends Actor2D
+class_name Actor2DTopDown
