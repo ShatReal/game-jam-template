@@ -12,7 +12,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = horizontal_input * speed
 	
 	velocity.y += gravity * delta
-	if Input.is_action_just_pressed("move_up"):
+	if Input.is_action_just_pressed("move_up") and is_on_floor():
 		velocity.y = -jump_force
 		
 	velocity = move_and_slide(velocity, Vector2.UP)

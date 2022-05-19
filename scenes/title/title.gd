@@ -10,11 +10,11 @@ func _on_Start_pressed() -> void:
 
 
 func _on_Load_pressed() -> void:
-	pass # Replace with function body.
+	SaveLoad.show_save_load()
 
 
 func _on_Settings_pressed() -> void:
-	pass # Replace with function body.
+	Settings.show_settings()
 
 
 func _on_Credits_pressed() -> void:
