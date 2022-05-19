@@ -24,22 +24,26 @@ __meta__ = {
 [node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
 alignment = 1
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer"]
-margin_top = 109.0
-margin_right = 512.0
-margin_bottom = 123.0
+margin_top = 105.0
+margin_right = 504.0
+margin_bottom = 119.0
 text = "Settings"
 align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
-margin_top = 127.0
-margin_right = 512.0
-margin_bottom = 151.0
+margin_top = 123.0
+margin_right = 504.0
+margin_bottom = 147.0
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer"]
 margin_top = 5.0
@@ -53,20 +57,20 @@ margin_right = 94.0
 margin_bottom = 24.0
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
-margin_top = 155.0
-margin_right = 512.0
-margin_bottom = 171.0
+margin_top = 151.0
+margin_right = 504.0
+margin_bottom = 167.0
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer2"]
 margin_top = 1.0
-margin_right = 101.0
+margin_right = 100.0
 margin_bottom = 15.0
 size_flags_horizontal = 3
 text = "Sound"
 
 [node name="Sound" type="HSlider" parent="PopupPanel/VBoxContainer/HBoxContainer2"]
-margin_left = 105.0
-margin_right = 512.0
+margin_left = 104.0
+margin_right = 504.0
 margin_bottom = 16.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.0
@@ -75,20 +79,20 @@ step = 0.01
 value = 1.0
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
-margin_top = 175.0
-margin_right = 512.0
-margin_bottom = 191.0
+margin_top = 171.0
+margin_right = 504.0
+margin_bottom = 187.0
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer3"]
 margin_top = 1.0
-margin_right = 101.0
+margin_right = 100.0
 margin_bottom = 15.0
 size_flags_horizontal = 3
 text = "Music"
 
 [node name="Music" type="HSlider" parent="PopupPanel/VBoxContainer/HBoxContainer3"]
-margin_left = 105.0
-margin_right = 512.0
+margin_left = 104.0
+margin_right = 504.0
 margin_bottom = 16.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 4.0

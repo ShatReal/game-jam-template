@@ -24,7 +24,7 @@ func _ready() -> void:
 		var music = config.get_value("audio", "music", 1.0)
 		if music is float:
 			AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear2db(music))
-			$PopupPanel/VBoxContainer/HBoxContainer2/Sound.value = music
+			$PopupPanel/VBoxContainer/HBoxContainer3/Music.value = music
 		else:
 			config.set_value("audio", "music", 1.0)
 		config.save(PATH)
