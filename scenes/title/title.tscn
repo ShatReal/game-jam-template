@@ -87,8 +87,10 @@ margin_top = 4.0
 margin_right = -4.0
 margin_bottom = -4.0
 bbcode_enabled = true
-bbcode_text = "[center]Made with [url=https://godotengine.org/]Godot 3.4.4[/url][/center]"
-text = "Made with Godot 3.4.4"
+bbcode_text = "[center]Made with [url=https://godotengine.org/]Godot 3.4.4[/url]
+Programmed by Exuin[/center]"
+text = "Made with Godot 3.4.4
+Programmed by Exuin"
 __meta__ = {
 "_edit_lock_": true
 }

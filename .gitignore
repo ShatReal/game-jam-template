@@ -2,6 +2,7 @@
 # For more information on what files should be excluded from version control,
 # see <https://docs.godotengine.org/en/stable/getting_started/workflow/project_setup/version_control_systems.html#files-to-exclude-from-vcs>
 
+.export/
 .import/
 export.cfg
 

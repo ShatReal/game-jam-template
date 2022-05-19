@@ -34,16 +34,16 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer"]
-margin_top = 105.0
+margin_top = 53.0
 margin_right = 504.0
-margin_bottom = 119.0
+margin_bottom = 67.0
 text = "Settings"
 align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
-margin_top = 123.0
+margin_top = 71.0
 margin_right = 504.0
-margin_bottom = 147.0
+margin_bottom = 95.0
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer"]
 margin_top = 5.0
@@ -56,10 +56,71 @@ margin_left = 70.0
 margin_right = 94.0
 margin_bottom = 24.0
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
-margin_top = 151.0
+[node name="HBoxContainer4" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+margin_top = 99.0
 margin_right = 504.0
-margin_bottom = 167.0
+margin_bottom = 123.0
+
+[node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer4"]
+margin_top = 5.0
+margin_right = 69.0
+margin_bottom = 19.0
+text = "Borderless"
+
+[node name="Borderless" type="CheckBox" parent="PopupPanel/VBoxContainer/HBoxContainer4"]
+margin_left = 73.0
+margin_right = 97.0
+margin_bottom = 24.0
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+margin_top = 127.0
+margin_right = 504.0
+margin_bottom = 151.0
+
+[node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer6"]
+margin_top = 5.0
+margin_right = 37.0
+margin_bottom = 19.0
+text = "VSync"
+
+[node name="VSync" type="CheckBox" parent="PopupPanel/VBoxContainer/HBoxContainer6"]
+margin_left = 41.0
+margin_right = 65.0
+margin_bottom = 24.0
+pressed = true
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+margin_top = 155.0
+margin_right = 504.0
+margin_bottom = 175.0
+
+[node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer5"]
+margin_top = 3.0
+margin_right = 89.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+text = "Brightness"
+
+[node name="Brightness" type="HSlider" parent="PopupPanel/VBoxContainer/HBoxContainer5"]
+margin_left = 93.0
+margin_right = 451.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.0
+max_value = 8.0
+step = 0.01
+value = 1.0
+
+[node name="BrightnessReset" type="Button" parent="PopupPanel/VBoxContainer/HBoxContainer5"]
+margin_left = 455.0
+margin_right = 503.0
+margin_bottom = 20.0
+text = "Reset"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+margin_top = 179.0
+margin_right = 504.0
+margin_bottom = 195.0
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer2"]
 margin_top = 1.0
@@ -79,9 +140,9 @@ step = 0.01
 value = 1.0
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
-margin_top = 171.0
+margin_top = 199.0
 margin_right = 504.0
-margin_bottom = 187.0
+margin_bottom = 215.0
 
 [node name="Label" type="Label" parent="PopupPanel/VBoxContainer/HBoxContainer3"]
 margin_top = 1.0
@@ -100,7 +161,18 @@ max_value = 1.0
 step = 0.01
 value = 1.0
 
+[node name="Keybinds" type="Button" parent="PopupPanel/VBoxContainer"]
+margin_top = 219.0
+margin_right = 504.0
+margin_bottom = 239.0
+text = "Keybinds"
+
 [connection signal="popup_hide" from="PopupPanel" to="." method="_on_PopupPanel_popup_hide"]
 [connection signal="toggled" from="PopupPanel/VBoxContainer/HBoxContainer/Fullscreen" to="." method="_on_Fullscreen_toggled"]
+[connection signal="toggled" from="PopupPanel/VBoxContainer/HBoxContainer4/Borderless" to="." method="_on_Borderless_toggled"]
+[connection signal="toggled" from="PopupPanel/VBoxContainer/HBoxContainer6/VSync" to="." method="_on_VSync_toggled"]
+[connection signal="value_changed" from="PopupPanel/VBoxContainer/HBoxContainer5/Brightness" to="." method="_on_Brightness_value_changed"]
+[connection signal="pressed" from="PopupPanel/VBoxContainer/HBoxContainer5/BrightnessReset" to="." method="_on_BrightnessReset_pressed"]
 [connection signal="value_changed" from="PopupPanel/VBoxContainer/HBoxContainer2/Sound" to="." method="_on_Sound_value_changed"]
 [connection signal="value_changed" from="PopupPanel/VBoxContainer/HBoxContainer3/Music" to="." method="_on_Music_value_changed"]
+[connection signal="pressed" from="PopupPanel/VBoxContainer/Keybinds" to="." method="_on_Keybinds_pressed"]

@@ -24,34 +24,38 @@ __meta__ = {
 [node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="New" type="Button" parent="PopupPanel/VBoxContainer"]
-margin_right = 512.0
+margin_right = 504.0
 margin_bottom = 20.0
 text = "New Slot"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PopupPanel/VBoxContainer"]
 margin_top = 24.0
-margin_right = 512.0
-margin_bottom = 276.0
+margin_right = 504.0
+margin_bottom = 268.0
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel/VBoxContainer/ScrollContainer"]
-margin_right = 512.0
-margin_bottom = 252.0
+margin_right = 504.0
+margin_bottom = 244.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Slots" type="VBoxContainer" parent="PopupPanel/VBoxContainer/ScrollContainer/VBoxContainer"]
-margin_right = 512.0
+margin_right = 504.0
 
 [node name="Clear" type="Button" parent="PopupPanel/VBoxContainer"]
-margin_top = 280.0
-margin_right = 512.0
-margin_bottom = 300.0
+margin_top = 272.0
+margin_right = 504.0
+margin_bottom = 292.0
 text = "Clear All"
 
 [connection signal="popup_hide" from="PopupPanel" to="." method="_on_PopupPanel_popup_hide"]
