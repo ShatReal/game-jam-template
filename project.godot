@@ -8,34 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "KinematicBody2D",
-"class": "Actor2D",
-"language": "GDScript",
-"path": "res://scenes/2d/actors/actor_2d.gd"
-}, {
-"base": "Actor2D",
-"class": "Actor2DSidescroller",
-"language": "GDScript",
-"path": "res://scenes/2d/actors/sidescroller/actor_2d_sidescroller.gd"
-}, {
-"base": "Actor2D",
-"class": "Actor2DTopDown",
-"language": "GDScript",
-"path": "res://scenes/2d/actors/top_down/actor_2d_top_down.gd"
-}, {
-"base": "KinematicBody",
-"class": "Actor3D",
-"language": "GDScript",
-"path": "res://scenes/3d/actors/actor_3d.gd"
-} ]
-_global_script_class_icons={
-"Actor2D": "",
-"Actor2DSidescroller": "",
-"Actor2DTopDown": "",
-"Actor3D": ""
-}
-
 [application]
 
 config/name="Game Jam Template"
